@@ -2,7 +2,7 @@
     "name": "rexx-syntax-highlighting",
     "displayName": "rexx-syntax-highlighting",
     "description": "syntax highlighting of the rexx language",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "websi96",
     "repository": "https://github.com/websi96/rexx-syntax-highlighting.git",
     "engines": {
@@ -12,16 +12,26 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "rexx",
-            "aliases": ["REXX", "rexx"],
-            "extensions": [".rex", ".rexx"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "rexx",
-            "scopeName": "source.rexx",
-            "path": "./syntaxes/rexx.tmLanguage"
-        }]
+        "languages": [
+            {
+                "id": "rexx",
+                "aliases": [
+                    "REXX",
+                    "rexx"
+                ],
+                "extensions": [
+                    ".rex",
+                    ".rexx"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "rexx",
+                "scopeName": "source.rexx",
+                "path": "./syntaxes/rexx.tmLanguage"
+            }
+        ]
     }
 }
