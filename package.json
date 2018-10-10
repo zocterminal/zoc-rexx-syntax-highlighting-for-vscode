@@ -1,0 +1,26 @@
+{
+    "name": "rexx-syntax-highlighting",
+    "displayName": "rexx-syntax-highlighting",
+    "description": "syntax highlighting of the rexx language",
+    "version": "0.0.1",
+    "publisher": "Websi96",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "rexx",
+            "aliases": ["REXX", "rexx"],
+            "extensions": [".rex", ".rexx"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "rexx",
+            "scopeName": "source.rexx",
+            "path": "./syntaxes/rexx.tmLanguage"
+        }]
+    }
+}
