@@ -21,7 +21,8 @@
                 ],
                 "extensions": [
                     ".rex",
-                    ".rexx"
+                    ".rexx",
+                    ".rxj"
                 ],
                 "configuration": "./language-configuration.json"
             }

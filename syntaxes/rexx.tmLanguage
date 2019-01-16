@@ -5,6 +5,9 @@
 	<key>fileTypes</key>
 	<array>
 		<string>rex</string>
+		<string>rxj</string>
+		<string>rexx</string>
+		<string>rx</string>
 	</array>
 	<key>firstLineMatch</key>
 	<string>/\*.*(?i:REXX)\b</string>
