@@ -28,6 +28,12 @@
 			<string>comment.rexx</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>/--</string>
+			<key>name</key>
+			<string>comment.rexx</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>(['"])[01 ]+\1(?i:b)</string>
 			<key>name</key>
