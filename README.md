@@ -12,6 +12,10 @@ Not aware of "Umlaute" in comments.
 
 ## Release Notes
 
+### 1.0.3
+
+added do,end to brackets
+
 ### 1.0.0
 
 Initial release
