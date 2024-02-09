@@ -22,7 +22,8 @@
                 "extensions": [
                     ".rex",
                     ".rexx",
-                    ".rxj"
+                    ".rxj",
+                    ".zrx"
                 ],
                 "configuration": "./language-configuration.json"
             }
@@ -31,7 +32,7 @@
             {
                 "language": "rexx",
                 "scopeName": "source.rexx",
-                "path": "./syntaxes/rexx.tmLanguage"
+                "path": "./syntaxes/rexx.tmLanguage.json"
             }
         ]
     }

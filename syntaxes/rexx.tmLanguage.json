@@ -1,5 +1,5 @@
 {
-    "fileTypes": ["rex", "rxj", "rexx", "rx"],
+    "fileTypes": ["rex", "rxj", "rexx", "rx", "zrx"],
     "firstLineMatch": "/\\*.*(?i:REXX)\\b",
     "foldingStartMarker": "(\\/\\*|\\b(do|select)\\b)",
     "foldingStopMarker": "(\\*/|\\bend\\b)",
