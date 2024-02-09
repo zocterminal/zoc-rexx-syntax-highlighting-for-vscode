@@ -9,7 +9,7 @@ that [ZOC Terminal](https://www.emtec.com/zoc/index.html) offers
 with support for the .zrx file name and the extra commands from
 [ZOC-REXX Extensions](https://www.emtec.com/zoc/onlinehelp.html?t=10855).
 
-&nbsp; 
+&nbsp;&nbsp;
 
 ## Features
 
