@@ -22,6 +22,7 @@
                 "extensions": [
                     ".rex",
                     ".rexx",
+                    ".rx",
                     ".rxj",
                     ".zrx"
                 ],
