@@ -23,5 +23,11 @@ comments and brackets.
 https://code.visualstudio.com/docs
 
 ## Install your extension
-* To start using your extension with Visual Studio Code copy it into the `<user home>/.vscode/extensions` folder and restart Code.
-* To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.
+To start using your extension with Visual Studio Code 
+
+1. Locate the  the `<user home>/.vscode/extensions` folder, e.g. `C:\Users\You\.vscode\extensions\`.
+2. Inside that folder, create a folder for your extension. The folder name for your extension needs to start with your publisher name from your `package.json`, e.g. `zocterminal.zoc-rexx-highlighting.1.0.4`.
+3. Copy the extension files to that folder (package.json, package-icon, readme, changelog, license and the syntaxes folder with the rexx.tm.json file).
+4. Restart VS-Code and you should immediately see the entry in the extension pane.
+
+To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.

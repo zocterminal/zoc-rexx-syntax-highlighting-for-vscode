@@ -1,10 +1,14 @@
 {
-    "name": "rexx-syntax-highlighting",
-    "displayName": "rexx-syntax-highlighting",
-    "description": "syntax highlighting of the rexx language",
+    "name": "zoc-rexx-syntax-highlighting",
+    "displayName": "ZOC REXX Syntax Highlighting",
+    "description": "Syntax-Highlighting of the REXX language with Extensions for ZOC Terminal",
     "version": "1.0.3",
     "publisher": "zocterminal",
-    "repository": "https://github.com/zocterminal/zoc-rexx-syntax-highlighting-for-vscode",
+	"icon": "package-icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zocterminal/zoc-rexx-syntax-highlighting-for-vscode"
+	},
     "engines": {
         "vscode": "^1.28.0"
     },
