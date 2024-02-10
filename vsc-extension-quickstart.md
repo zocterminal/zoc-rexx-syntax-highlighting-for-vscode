@@ -5,12 +5,12 @@
 * `package.json` - this is the manifest file in which you declare your language support and define
 the location of the grammar file that has been copied into your extension.
 * `syntaxes/rexx.tmLanguage` - this is the Text mate grammar file that is used for tokenization.
-* `language-configuration.json` - this the language configuration, defining the tokens that are used for
+* `syntaxes/language-configuration.json` - this the language configuration, defining the tokens that are used for
 comments and brackets.
 
 ## Get up and running straight away
 * Make sure the language configuration settings in `language-configuration.json` are accurate.
-* Press `F5` to open a new window with your extension loaded.
+* Press `F5` to open a new window with your extension loaded (this happens through `.vscode/launch.json`).
 * Create a new file with a file name suffix matching your language.
 * Verify that syntax highlighting works and that the language configuration settings are working.
 
@@ -26,8 +26,8 @@ https://code.visualstudio.com/docs
 To start using your extension with Visual Studio Code 
 
 1. Locate the  the `<user home>/.vscode/extensions` folder, e.g. `C:\Users\You\.vscode\extensions\`.
-2. Inside that folder, create a folder for your extension. The folder name for your extension needs to start with your publisher name from your `package.json`, e.g. `zocterminal.zoc-rexx-highlighting.1.0.4`.
-3. Copy the extension files to that folder (package.json, package-icon, readme, changelog, license and the syntaxes folder with the rexx.tm.json file).
+2. Inside that folder, create a folder for your extension. The folder name for your extension needs to start with your publisher name from your `package.json`, e.g. `zocterminal.zoc-rexx-highlighting-1.0.4`.
+3. Copy the extension files to that folder (package.json, package-icon, readme, changelog, license and the syntaxes folder with the rexx.tm.json file). Alterately see the `makefile` in `make-syntaxes', it has an `nmake deploy` option.
 4. Restart VS-Code and you should immediately see the entry in the extension pane.
 
 To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.
