@@ -16,8 +16,9 @@ blocks of code, comments, etc.
 ### file: rexx.tmLanguageNew.json
 
 JSON version created by the REXX script in the `make-syntaxes` folder.
-This file is the one that is actually referenced in the `package.json`
-for this project/release.  See the readme file in that folder.
+This  is the one tmLanguage that is *actually* used now for this project/release
+(see the `package.json` file).  See the also README file in the `make-syntaxes` 
+folder on how to update/create this file.
 
 ### file: rexx.tmLanguage
 
