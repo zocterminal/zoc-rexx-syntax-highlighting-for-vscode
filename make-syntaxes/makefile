@@ -21,9 +21,9 @@ deploy: syntaxes
 	copy ..\README.md $(INSTALLDIR)
 	copy ..\package.json $(INSTALLDIR)
 	copy ..\package-icon.png $(INSTALLDIR)
-	copy ..\language-configuration.json $(INSTALLDIR)
 	copy ..\LICENSE.txt $(INSTALLDIR)
 	copy ..\CHANGELOG.md $(INSTALLDIR)
+	copy ..\syntaxes\language-configuration.json $(INSTALLDIR)\syntaxes
 	copy ..\syntaxes\rexx.tmLanguageNew.json $(INSTALLDIR)\syntaxes
 !endif
 

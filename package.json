@@ -2,7 +2,7 @@
     "name": "zoc-rexx-syntax-highlighting",
     "displayName": "ZOC REXX Syntax Highlighting",
     "description": "Syntax-Highlighting of the REXX language with Extensions for ZOC Terminal",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "zocterminal",
 	"icon": "package-icon.png",
 	"repository": {
@@ -19,18 +19,9 @@
         "languages": [
             {
                 "id": "rexx",
-                "aliases": [
-                    "REXX",
-                    "rexx"
-                ],
-                "extensions": [
-                    ".rex",
-                    ".rexx",
-                    ".rx",
-                    ".rxj",
-                    ".zrx"
-                ],
-                "configuration": "./language-configuration.json"
+                "aliases": [  "REXX", "rexx" ],
+                "extensions": [ ".rex", ".rexx", ".rx", ".rxj", ".zrx" ],
+                "configuration": "./syntaxes/language-configuration.json"
             }
         ],
         "grammars": [
