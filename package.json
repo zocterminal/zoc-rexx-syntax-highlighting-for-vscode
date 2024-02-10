@@ -3,8 +3,8 @@
     "displayName": "rexx-syntax-highlighting",
     "description": "syntax highlighting of the rexx language",
     "version": "1.0.3",
-    "publisher": "websi96",
-    "repository": "https://github.com/websi96/rexx-syntax-highlighting.git",
+    "publisher": "zocterminal",
+    "repository": "https://github.com/zocterminal/zoc-rexx-syntax-highlighting-for-vscode",
     "engines": {
         "vscode": "^1.28.0"
     },
@@ -33,7 +33,7 @@
             {
                 "language": "rexx",
                 "scopeName": "source.rexx",
-                "path": "./syntaxes/rexx.tmLanguage.json"
+                "path": "./syntaxes/rexx.tmLanguageNew.json"
             }
         ]
     }

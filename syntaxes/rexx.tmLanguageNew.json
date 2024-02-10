@@ -1,0 +1,67 @@
+{
+    "fileTypes": ["rex", "rxj", "rexx", "rx", "zrx"],
+    "firstLineMatch": "/\\*.*(?i:REXX)\\b",
+    "foldingStartMarker": "(\\/\\*|\\b(do|select)\\b)",
+    "foldingStopMarker": "(\\*/|\\bend\\b)",
+    "name": "REXX",
+    "patterns": [
+      {
+        "begin": "/\\*",
+        "end": "\\*/",
+        "name": "comment.rexx"
+      },
+      {
+        "begin": "--",
+        "end": "(?=$)",
+        "name": "comment.rexx"
+      },
+      {
+        "match": "(['\"])[01 ]+\\1(?i:b)",
+        "name": "constant.rexx"
+      },
+      {
+        "match": "(['\"])[0-9a-fA-F ]+\\1(?i:x)",
+        "name": "constant.rexx"
+      },
+      {
+        "begin": "(['\"])",
+        "end": "\\1",
+        "name": "string.rexx"
+      },
+      {
+        "match": "\\b[A-Za-z@#$!?_][A-Za-z@#$!?_0-9]*:",
+        "name": "entity.name.function.rexx"
+      },
+      {
+        "match": "([0-9]+(\\.)?[0-9]*(?i:e[-+]?[0-9]+)?|[0-9]*(\\.)?[0-9]+)(?i:e[-+]?[0-9]+)?\\b",
+        "name": "constant.numeric.rexx"
+      },
+      {
+        "match": "[0-9\\.][A-Za-z0-9@#$¢.!?_]*",
+        "name": "constant.other.rexx"
+      },
+      {
+        "match": "([\\+-/*%&|()¬\\\\=<>])",
+        "name": "keyword.operator.rexx"
+      },
+      {
+        "match": "\\b(?i:$DO|FOREVER|WHILE|UNTIL|TO|BY|FOR|END|EXIT|IF|THEN|ELSE|ITERATE|LEAVE|NOP|RETURN|SELECT|WHEN|OTHERWISE|OPTIONS|WITH|PULL|PUSH|QUEUE|SAY|ARG|DROP|INTERPRET|UPPER|CALL(\\s+(OFF|ON)\\s+(ERROR|FAILURE(\\s+NAME)?|HALT))?|SIGNAL(\\s+(OFF|ON)\\s+(ERROR|FAILURE(\\s+NAME)?|HALT|NOVALUE|SYNTAX))|ADDRESS\\s+\\w+|NUMERIC\\s+(DIGITS|FORM(\\s+(SCIENTIFIC|ENGINEERING|VALUE))?|FUZZ)|PARSE(\\s+UPPER)?\\s+(EXTERNAL|NUMERIC|SOURCE|VALUE|VAR|VERSION)?|PROCEDURE(\\s+EXPOSE)?|TRACE\\s+\\w+)\\b(?!\\.)",
+        "name": "keyword.rexx"
+      },
+      {
+        "match": "\\b[A-Za-z@#$!?_0-9]+(?=\\()",
+        "name": "support.function.rexx"
+      },
+      {
+        "match": "\\b(?i:$ABBREV|ABS|ADDRESS|ARG|BITAND|BITOR|BITXOR|B2X|CENTER/CENTRE|COMPARE|CONDITION|COPIES|C2D|C2X|DATATYPE|DATE|DBCS|DELSTR|DELWORD|DIGITS|D2C|D2X|ERRORTEXT|EXTERNALS|FIND|FORM|FORMAT|FUZZ|GETMSG|INDEX|INSERT|JUSTIFY|LASTPOS|LEFT|LENGTH|LINESIZE|LISTDSI|MAX|MIN|MSG|MVSVAR|OUTTRAP|OVERLAY|POS|PROMPT|QUEUED|RANDOM|REVERSE|RIGHT|SETLANG|SIGN|SOURCELINE|SPACE|STORAGE|STRIP|SUBSTR|SUBWORD|SYMBOL|SYSCPUS|SYSDSN|SYSVAR|TIME|TRACE|TRANSLATE|TRUNC|USERID|VALUE|VERIFY|WORD|WORDINDEX|WORDLENGTH|WORDPOS|WORDS|XRANGE|X2B|X2C|X2D)",
+        "name": "support.function.rexx"
+      },
+      {
+        "match": "\\b[A-Za-z@#$¢!?_][A-Za-z0-9@#$¢.!?_]*",
+        "name": "variable.rexx"
+      }
+    ],
+    "scopeName": "source.rexx",
+    "uuid": "1ebe3dbc-ae7f-baad-cafe-c37fc1b0d204"
+  }
+  
