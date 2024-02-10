@@ -45,15 +45,15 @@
         "name": "keyword.operator.rexx"
       },
       {
-        "match": "\\b(?i:$DO|FOREVER|WHILE|UNTIL|TO|BY|FOR|END|EXIT|IF|THEN|ELSE|ITERATE|LEAVE|NOP|RETURN|SELECT|WHEN|OTHERWISE|OPTIONS|WITH|PULL|PUSH|QUEUE|SAY|ARG|DROP|INTERPRET|UPPER|CALL(\\s+(OFF|ON)\\s+(ERROR|FAILURE(\\s+NAME)?|HALT))?|SIGNAL(\\s+(OFF|ON)\\s+(ERROR|FAILURE(\\s+NAME)?|HALT|NOVALUE|SYNTAX))|ADDRESS\\s+\\w+|NUMERIC\\s+(DIGITS|FORM(\\s+(SCIENTIFIC|ENGINEERING|VALUE))?|FUZZ)|PARSE(\\s+UPPER)?\\s+(EXTERNAL|NUMERIC|SOURCE|VALUE|VAR|VERSION)?|PROCEDURE(\\s+EXPOSE)?|TRACE\\s+\\w+)\\b(?!\\.)",
+        "match": "\\b(?i:DO|FOREVER|WHILE|UNTIL|TO|BY|FOR|END|EXIT|IF|THEN|ELSE|ITERATE|LEAVE|NOP|RETURN|SELECT|WHEN|OTHERWISE|OPTIONS|WITH|PULL|PUSH|QUEUE|SAY|ARG|DROP|INTERPRET|UPPER|CALL(\\s+(OFF|ON)\\s+(ERROR|FAILURE(\\s+NAME)?|HALT))?|SIGNAL(\\s+(OFF|ON)\\s+(ERROR|FAILURE(\\s+NAME)?|HALT|NOVALUE|SYNTAX))|ADDRESS\\s+\\w+|NUMERIC\\s+(DIGITS|FORM(\\s+(SCIENTIFIC|ENGINEERING|VALUE))?|FUZZ)|PARSE(\\s+UPPER)?\\s+(EXTERNAL|NUMERIC|SOURCE|VALUE|VAR|VERSION)?|PROCEDURE(\\s+EXPOSE)?|TRACE\\s+\\w+)\\b(?!\\.)",
         "name": "keyword.rexx"
       },
       {
-        "match": "\\b[A-Za-z@#$!?_0-9]+(?=\\()",
+        "match": "\\b(?i:ABBREV|ABS|ADDRESS|ARG|BITAND|BITOR|BITXOR|B2X|CENTER/CENTRE|COMPARE|CONDITION|COPIES|C2D|C2X|DATATYPE|DATE|DBCS|DELSTR|DELWORD|DIGITS|D2C|D2X|ERRORTEXT|EXTERNALS|FIND|FORM|FORMAT|FUZZ|GETMSG|INDEX|INSERT|JUSTIFY|LASTPOS|LEFT|LENGTH|LINESIZE|LISTDSI|MAX|MIN|MSG|MVSVAR|OUTTRAP|OVERLAY|POS|PROMPT|QUEUED|RANDOM|REVERSE|RIGHT|SETLANG|SIGN|SOURCELINE|SPACE|STORAGE|STRIP|SUBSTR|SUBWORD|SYMBOL|SYSCPUS|SYSDSN|SYSVAR|TIME|TRACE|TRANSLATE|TRUNC|USERID|VALUE|VERIFY|WORD|WORDINDEX|WORDLENGTH|WORDPOS|WORDS|XRANGE|X2B|X2C|X2D|STREAM|LINEIN|LINEOUT|CHARIN|CHAROUT)\\b(?!\\.)",
         "name": "support.function.rexx"
       },
       {
-        "match": "\\b(?i:$ABBREV|ABS|ADDRESS|ARG|BITAND|BITOR|BITXOR|B2X|CENTER/CENTRE|COMPARE|CONDITION|COPIES|C2D|C2X|DATATYPE|DATE|DBCS|DELSTR|DELWORD|DIGITS|D2C|D2X|ERRORTEXT|EXTERNALS|FIND|FORM|FORMAT|FUZZ|GETMSG|INDEX|INSERT|JUSTIFY|LASTPOS|LEFT|LENGTH|LINESIZE|LISTDSI|MAX|MIN|MSG|MVSVAR|OUTTRAP|OVERLAY|POS|PROMPT|QUEUED|RANDOM|REVERSE|RIGHT|SETLANG|SIGN|SOURCELINE|SPACE|STORAGE|STRIP|SUBSTR|SUBWORD|SYMBOL|SYSCPUS|SYSDSN|SYSVAR|TIME|TRACE|TRANSLATE|TRUNC|USERID|VALUE|VERIFY|WORD|WORDINDEX|WORDLENGTH|WORDPOS|WORDS|XRANGE|X2B|X2C|X2D)",
+        "match": "\\b(?i:ZocAsk|ZocAskpassword|ZocAskfilename|ZocAskfilenames|ZocAskfoldername|ZocBeep|ZocClearscreen|ZocClipboard|ZocCommand|ZocConnecthostdirentry|ZocCtrlstring|ZocConnect|ZocDownload|ZocDownloadpostop|ZocDialog|ZocDdeclient|ZocDelay|ZocDevicecontrol|ZocDostring|ZocEventsemaphore|ZocFilename|ZocFileCopy|ZocFileDelete|ZocFileRename|ZocGetInfo|ZocGetSessionOption|ZocGetprogramOption|ZocGetHostentry|ZocWaitLine|ZocGlobalStore|ZocDisconnect|ZocKeyboard|ZocLastline|ZocListfiles|ZocLoadKeyboardProfile|ZocLoadSessionProfile|ZocLoadTranslationProfile|ZocMath|ZocMenuEvent|ZocMessageBox|ZocNotify|ZocPing|ZocPlaySound|ZocReceiveBuf|ZocRegistry|ZocRequest|ZocRequestList|ZocRespond|ZocResult|ZocSavesessionProfile|ZocSend|ZocSendDelayed|ZocSendRaw|ZocSendBreak|ZocSendKey|ZocSendEmulationKey|ZocSessionTabs|ZocSetAutoAccept|ZocSetAuditlogname|ZocSetCodepage|ZocSetCursorpos|ZocSetDevice|ZocSetDeviceopts|ZocSetDlpath|ZocSetEmulation|ZocSetHostentry|ZocSetLogging|ZocSetLogfilename|ZocSetMode|ZocSetSessionoption|ZocSetProgramoption|ZocSetTimer|ZocSetUnattended|ZocSetScriptoutputdestination|ZocShell|ZocShellExec|ZocShellOpen|ZocSuppressOutput|ZocSyncTime|ZocTerminate|ZocGetscreen|ZocString|ZocTimeout|ZocUpload|ZocWindowState|ZocWrite|ZocWriteln|ZocWriteraw|ZocWait|ZocWaitidle|ZocWaitNumChars|ZocWaitmux|ZocWaitforSeq|ZocAutoconnect|ZocAutodial|ZocAskp|ZocBaud|ZocCls|ZocDial|ZocEndzoc|ZocExec|ZocGetphonebk|ZocGetoption|ZocGetline|ZocGetfilename|ZocGetfilenames|ZocGetfoldername|ZocGetglobaloption|ZocGlobal|ZocHangup|ZocLoadopts|ZocLoadkeyfile|ZocLogging|ZocLogname|ZocMsgbox|ZocReply|ZocScreen|ZocSleep|ZocSaveopts|ZocSessiontab|ZocSetautoanswer|ZocSetdevparm|ZocSetlogname|ZocSetphonebk|ZocSetoption|ZocSetglobaloption|ZocHfc|ZocCarrier|ZocCursor|ZocLockkeyboard|ZocRestimer|ZocClrcapt|ZocCaptclr|ZocSetemu|ZocSethost|ZocSendbrk|ZocPid|ZocOs)\\b(?!\\.)",
         "name": "support.function.rexx"
       },
       {
@@ -62,6 +62,6 @@
       }
     ],
     "scopeName": "source.rexx",
-    "uuid": "1ebe3dbc-ae7f-baad-cafe-c37fc1b0d204"
+    "uuid": "1ebe3dbc-ae7f-baad-cafe-20C00100022C"
   }
   

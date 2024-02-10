@@ -9,21 +9,26 @@ output_file= 'rexx.tmLanguageNew.json'
 keywords_file= 'language-keywords.txt'
 keywords_placeholder='${keyword.rexx}'
 
-supportfnct_file= 'built-in-functions.txt'
-supportfnct_placeholder= '${support.function.rexx}'
+supportfnctrexx_file= 'built-in-functions.txt'
+supportfnctrexx_placeholder= '${support.function.rexx.rexx}'
 
-files.0= 2
-files.1= supportfnct_file
-files.2= keywords_file
+supportfnctzoc_file= 'built-in-zoc-functions.txt'
+supportfnctzoc_placeholder= '${support.function.zoc.rexx}'
 
-placeholders.0= 2
-placeholders.1= supportfnct_placeholder
-placeholders.2= keywords_placeholder
+files.0= 3
+files.1= supportfnctrexx_file
+files.2= supportfnctzoc_file
+files.3= keywords_file
 
-values.0= 2
+placeholders.0= 3
+placeholders.1= supportfnctrexx_placeholder
+placeholders.2= supportfnctzoc_placeholder
+placeholders.3= keywords_placeholder
+
+values.0= 3
 values.1= ''
 values.2= ''
-
+values.3= ''
 
 --
 -- read placeholder values from placeholder files
@@ -54,6 +59,7 @@ END
 -- replace placeholders from placeholder files in json file
 --
 SAY 'make-syntax.rex: Writing' output_file
+ADDRESS CMD "DEL "||output_file
 DO FOREVER
     line= LINEIN(template_file)
     IF STREAM(template_file, 'S')\='READY' THEN LEAVE
@@ -67,7 +73,7 @@ DO FOREVER
         p= POS(placeholders.i, line)
         IF (p>0) THEN DO
             IF debug THEN SAY 'make-syntax.rex: replace in ' line
-            lline= LEFT(line, p)
+            lline= LEFT(line, p-1)
             rline= SUBSTR(line, p+LENGTH(placeholders.i))
             line= lline||values.i||rline
             IF debug THEN SAY 'make-syntax.rex: replaced in ' line
@@ -78,9 +84,20 @@ END
 CALL STREAM template_file, 'C', 'CLOSE'
 CALL STREAM output_file, 'C', 'CLOSE'
 
+
 SAY 'make-syntax.rex: conversion done'
 SAY ''
 
 SAY 'make-syntax.rex: Now review the' output_file ' and copy it to ..\syntaxes\rexx.tmLanguageNew.json'
 SAY 'make-syntax.rex: (see package.json for the exact filename)'
 SAY ''
+
+EXIT
+
+-- -----------------------------------------------------------------------
+--  dummy function with just a few names to test this
+-- -----------------------------------------------------------------------
+TEST:
+    CALL ZocAsk "Test"
+    n= ZocGetInfo("ONLINE")
+    RETURN

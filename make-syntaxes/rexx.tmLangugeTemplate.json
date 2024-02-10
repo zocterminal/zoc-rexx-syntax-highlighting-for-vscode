@@ -49,11 +49,11 @@
         "name": "keyword.rexx"
       },
       {
-        "match": "\\b[A-Za-z@#$!?_0-9]+(?=\\()",
+        "match": "\\b(?i:${support.function.rexx.rexx})\\b(?!\\.)",
         "name": "support.function.rexx"
       },
       {
-        "match": "\\b(?i:${support.function.rexx})",
+        "match": "\\b(?i:${support.function.zoc.rexx})\\b(?!\\.)",
         "name": "support.function.rexx"
       },
       {
@@ -62,6 +62,6 @@
       }
     ],
     "scopeName": "source.rexx",
-    "uuid": "1ebe3dbc-ae7f-baad-cafe-c37fc1b0d204"
+    "uuid": "1ebe3dbc-ae7f-baad-cafe-20C00100022C"
   }
   
