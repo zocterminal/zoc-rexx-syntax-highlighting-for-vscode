@@ -30,4 +30,4 @@ To start using your extension with Visual Studio Code
 3. Copy the extension files to that folder (package.json, package-icon, readme, changelog, license and the syntaxes folder with the rexx.tm.json file). Alterately see the `makefile` in `make-syntaxes', it has an `nmake deploy` option.
 4. Restart VS-Code and you should immediately see the entry in the extension pane.
 
-To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.
+To share your extension with the world, read on https://code.visualstudio.com/docs about [publishing](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) an extension.
